@@ -3,52 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles1.css">
-    <title>Sarah Smith Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Sarah Smith Photography</title>
 </head>
 <body>
     <header>
-        <div class="flex-container">
-            <div class="nav-logo"> 
-                <img 
-                    src="sslogo_480-removebg-preview.png" 
-                    alt="Sarah Logo" 
-                    style="height: auto; width: 300px;">
+        <div class="navbar">
+            <div class="logo">
+                <img src="sslogo_480-removebg-preview.png" alt="SS Logo">
             </div>
-            <div class="nav"></div>
-            <div class="flex-item">
-                <ul class="navbar-nav header-menu__nav">
-                <li class="nav-item active header-menu__item">
-                    <a class="nav-link header-menu__primary ca-navigation-link-N4yOxg ca-navigation-link-hover-2qywr2" href="index.html">Home</a>
-            </ul>
-            </div>
-            <div class="flex-item">
-                <ul class="navbar-nav header-menu__nav">
-                <li class="nav-item active header-menu__item">
-                    <a class="nav-link header-menu__primary ca-navigation-link-N4yOxg ca-navigation-link-hover-2qywr2" href="/">Portfolio</a>
-            </ul>
-            </div>
-            <div class="flex-item">
-                <ul class="navbar-nav header-menu__nav">
-                <li class="nav-item active header-menu__item">
-                    <a class="nav-link header-menu__primary ca-navigation-link-N4yOxg ca-navigation-link-hover-2qywr2" href="/">About</a>
-            </ul>
-            </div>
-            <div class="flex-item">
-                <ul class="navbar-nav header-menu__nav">
-                <li class="nav-item active header-menu__item">
-                    <a class="nav-link header-menu__primary ca-navigation-link-N4yOxg ca-navigation-link-hover-2qywr2" href="/">Contact</a>
-            </ul>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div class="grid-container">
-        <header class="grid-item header"> Brief Intro </header>
-        <nav class="grid-item sidebar"> Image </nav>
-        <main class="grid-item main"> 
-            Image
-        </main>
-        <footer class="grid-item"> Footer </footer>
+
+    <section id="hero">
+        <div class="hero-box">
+            <h1 class="hero-heading"> every picture tells a story</h1>
+                <!-- <p class="hero-desc"> Let us tell yours</p> -->
+
+            <div class="btn-box">
+                <a href="#contact" class="cta-btn get">GET IN TOUCH</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <div class="about-info">
+        <h2>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </h2>
+
     </div>
+        
+    <div class="row">
+        <div class="right">
+            <img src="11.jpg" alt="">
+        </div>
+
+        <div class="left">
+           <div class="content">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+           </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Sarah Smith Photography</h3>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <ul class="socials">
+                    <li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Sarah Smith Photography. designed by <span>AleroHannahFavour</span></p>
+        </div>
+    </footer>
 </body>
 </html>
