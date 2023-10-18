@@ -1,58 +1,51 @@
-.flex-container{
-    display: flex;
-    align-items: center ;
-    background-color: antiquewhite;
-    padding: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
-.flex-item{
-    flex: 1;
-    color: black;
-    background-color: aqua;
-    align-items: right;
-}
-
-.nav-logo{
-    padding: 17px;
-    align-items: center;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto repeat(2, 150px) auto;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "header header"
-    "sidebar main"
-    "footer footer"
-}
-
-.grid-item{
-    background-color: greenyellow;
-    padding: 50px;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
-    grid-area: header;
-    background-color: greenyellow;
-    color: black
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    margin-right: 15px;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-.main{
-    grid-area: main;
+nav a {
+    font-size: 18px;
+    font-weight: 300;
+    color: brown;
+    text-decoration: none;
+    margin-left: 120px;
+    transition: .3s;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color: greenyellow;
-    color: white
+nav a:hover{
+    color: grey;
 }
 
-footer{
-    grid-area: footer;
-    background-color: crimson;
-    color: white
+section{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.hero-page{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(pexels-mwabonje-ringa-1820919.jpg);
+    opacity: .7;
+}
