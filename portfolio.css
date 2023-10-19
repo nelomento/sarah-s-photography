@@ -7,9 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    /* min-height: 100vh; */
-}
+/* body{
+    min-height: 100vh;
+} */
 
 /* .navbar{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -63,10 +63,10 @@ body{
     margin: 30px 20px 20px 20px;
 }
 
-.container heading{
-    /* width: 50%; */
+/* .container heading{
+    width: 50%;
 
-}
+} */
 
 .container .heading h2{
     font-size: 3em;
