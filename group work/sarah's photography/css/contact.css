@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+/* Set font of all elements to 'Poppins' */
+* {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: peachpuff; */
+    color: blue;
+    padding: 10px;
+}
+
+.brand-logo{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.brand-logo a{
+    text-decoration: none;
+}
+
+.navbar-links ul{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    padding: 5px 50px;
+}
+
+.navbar-links li a:hover{
+    color: brown;
+}
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #E3F2FD;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #0c0d0f;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #070807;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #0b1115;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
+
+footer{
+    margin-top: 50px;
+    background: white;
+    height: auto;
+    width: 1oovw;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    color:brown;
+ } 
+
+ .footer-content{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+
+ .footer-content h3{
+    font-size:1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+ }
+
+ .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+ }
+
+ .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1 rem 0 3rem 0;
+ }
+
+ .socials li{
+    margin: 0 10px;
+ }
+
+ .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+ }
+
+ .socials a:hover i{
+color: red;
+ }
+
+ .footer-bottom{
+    /* background: black; */
+    width: 1oovw;
+    padding: 20px 0;
+    text-align: center;
+    color: brown
+ }
+
+ .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+
+ .footer-bottom span{
+    text-transform: uppercase;
+    opacity: 1;
+    font-family:200;
+ }
+ @media (max-width: 600px){
+    /* .toggle-button{
+        display: flex;
+    } */
+    .navbar-links{
+        width: 100%;
+        display: flex;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid brown;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        /* border-bottom: 1px solid red; */
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    /* .navbar-links.active{
+        display: flex;
+    } */
+
+    .brand-logo{
+        font-size: xx-large;
+    }
+
+}
