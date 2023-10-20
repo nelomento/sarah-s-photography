@@ -2,52 +2,73 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body{
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar ul{
-    width: 100%;
-    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    /* background-color: peachpuff; */
+    color: blue;
+    padding: 10px;
 }
 
-.navbar li{
-    height: 50px;
-    padding: 50px;
+.brand-logo{
+    position: relative;
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-.navbar a{
-    height: 50px;
-    padding: 0px 20px;
+.brand-logo a{
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    color:black ;
 }
 
-.navbar a:hover{
+.navbar-links ul{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    padding: 5px 50px;
+}
+
+.navbar-links li a:hover{
     color: brown;
 }
 
-.navbar .logo{
-    justify-content: center;
-}
+/* .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+} */
 
-.navbar .logo img{
-    width: 60%;
-}
+/* .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    border-radius: 10px;
+} */
 /* .logo img{
     position: fixed;
     height: 15px;
@@ -73,9 +94,9 @@ body{
     margin-top: 60px;
 }
 
-.hero-box .hero-heading{
+.hero-box .hero-heading span{
     color: white;
-    font-size: 50px;
+     font-size: 50px;
     line-height: 65px;
     font-family: 'Poppins', sans-serif;
 }
@@ -93,7 +114,7 @@ body{
 .hero-box .cta-btn {
     background: transparent;
     margin-right: 30px;
-    padding: 15px 40px;
+    padding: 8px 15px;
     border: 1px solid white;
     border-radius: 50px;
     color: white;
@@ -106,13 +127,14 @@ body{
 }
 
 .about-info{
-    margin-top: 30px ;
+    margin-top: 20px ;
     justify-content: center;
     text-align: center;
+    padding: 30px;
 }
 
 .row{
-    margin-top: 50px;
+    margin-top: 20px;
     width: 80%;
     max-width: 1170px;
     display: grid;
@@ -245,3 +267,64 @@ color: red;
     opacity: 1;
     font-family:200;
  }
+
+ @media (max-width: 768px){
+    /* .toggle-button{
+        display: flex;
+    } */
+
+    .hero-box .hero-heading span{
+        font-size: large;
+        width: 70%;
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-info{
+        font-size: smaller;
+        padding: 20px;
+    }
+
+    .hero-box .btn-box{
+        width: 100%;
+    }
+
+    .navbar-links{
+        width: 100%;
+        display: flex;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        /* border-bottom: 1px solid red; */
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    /* .navbar-links.active{
+        display: flex;
+    } */
+
+    .brand-logo{
+        font-size: xx-large;
+    }
+
+}
