@@ -13,34 +13,69 @@ body{
 }
 
 .navbar{
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar ul{
-    width: 100%;
-    list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
+    /* background-color: peachpuff; */
+    color: blue;
+    padding: 10px;
 }
 
-.navbar li{
-    height: 50px;
-    padding: 30px;
+.brand-logo{
+    position: relative;
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-.navbar a{
-    height: 50px;
-    padding: 0px 30px;
+.brand-logo a{
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    color:black ;
 }
 
-.navbar a:hover{
+.navbar-links ul{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    padding: 5px 50px;
+}
+
+.navbar-links li a:hover{
     color: brown;
 }
+
+/* .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+} */
+
+/* .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    border-radius: 10px;
+} */
+/* .logo img{
+    position: fixed;
+    height: 15px;
+    width: 20px;
+    background-color: blue;
+} */
 
 .logo img{
     position: absolute;
@@ -98,29 +133,6 @@ article p{
     text-align:center;
 }
 
-.navbar a {
-    position: relative;
-    font-size: 18px;
-    color: black;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: .3s;
-}
-
-.navbar a:hover::before {
-    width: 100%;
-}
 .container{
     width: 100%;
     margin:5% auto;
@@ -269,5 +281,39 @@ color: red;
     .cta-btn{
         margin: 0;
         margin-bottom: 20px;
+    }
+
+    
+    .navbar-links{
+        width: 100%;
+        display: flex;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        /* border-bottom: 1px solid red; */
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    /* .navbar-links.active{
+        display: flex;
+    } */
+
+    .brand-logo{
+        font-size: xx-large;
     }
 }
