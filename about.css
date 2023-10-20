@@ -149,9 +149,9 @@ article p{
  .cta-btn {
     background: black;
     margin-top: 4%;
-    margin-left: 620px;
+    margin-left: 800px;
     padding: 15px 40px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50px;
     color: white;
     text-decoration: none;
@@ -262,6 +262,11 @@ color: red;
     }
 
     .footer-bottom{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .cta-btn{
         margin: 0;
         margin-bottom: 20px;
     }
